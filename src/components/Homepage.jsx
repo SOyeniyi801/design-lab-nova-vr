@@ -86,6 +86,7 @@ const HomePage = () => {
           </AnimatePresence>
 
           <div className="relative w-full flex flex-col items-center">
+          <div className="h-[400px] flex items-center justify-center">
             <AnimatePresence mode="wait">
               <motion.img
                 key={`image-${currentPage}`}
@@ -98,6 +99,7 @@ const HomePage = () => {
                 transition={{ duration: 0.5 }}
               />
             </AnimatePresence>
+            </div>
 
             <div className="flex gap-4 mt-4 md:mt-0">
               <div className="md:absolute md:left-4 md:top-1/2 md:-translate-y-1/2">
