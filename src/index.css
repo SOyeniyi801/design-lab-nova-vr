@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'elevon';
+  src: url('/fonts/elevon.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'exo';
+  src: url('/fonts/exo.woff2') format('woff2');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-header;
+  }
+}

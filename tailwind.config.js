@@ -1,11 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
-      "./index.html",
-      "./src/**/*.{js,ts,jsx,tsx}",
+      "./src/**/*.{js,jsx,ts,tsx}",
     ],
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+          'sans': ['elevon', 'sans-serif'],
+          'body': ['exo', 'sans-serif'], // Add exo for body
+          'header': ['elevon', 'sans-serif'], // Keep elevon for headers
+        },
+      },
     },
     plugins: [],
   }
