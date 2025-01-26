@@ -71,7 +71,7 @@ const HomePage = () => {
           Get Lost In Your Own World
         </motion.h1>
 
-        <div className="relative flex flex-col items-center">
+        <div className="relative w-full max-w-4xl mx-auto">
           <AnimatePresence mode="wait">
             <motion.h2
               key={`title-${currentPage}`}
