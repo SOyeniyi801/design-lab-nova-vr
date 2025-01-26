@@ -7,7 +7,7 @@ export default {
       extend: {
         fontFamily: {
           'sans': ['elevon', 'sans-serif'],
-          'body': ['exo', 'sans-serif'], // Add exo for body
+          'body': ['changeling neo', 'sans-serif'], // Add exo for body
           'header': ['elevon', 'sans-serif'], // Keep elevon for headers
         },
       },

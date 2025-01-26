@@ -3,6 +3,7 @@ import { motion, AnimatePresence, color } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Menu } from 'lucide-react';
 import auroraImg from '../assets/figma-aurora-image.png';
 import nebulaImg from '../assets/figma-nebula-image.png';
+import novaVrLogo from '../assets/nova-vr-logo.png'
 
 const NavButton = ({ direction, onClick }) => (
   <button 
@@ -30,7 +31,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-white">
       <nav className="flex justify-between items-center p-4">
-        <span className="text-xl font-bold">NOVA VR</span>
+        <img src={novaVrLogo} alt='Nova VR Logo' className='w-20'></img>
         
         <button className="md:hidden border p-1" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <Menu size={24} />
@@ -40,7 +41,7 @@ const HomePage = () => {
           {['Demo', 'Explore', 'Shop', 'Get Help'].map((item) => (
             <button 
               key={item} 
-              className="border px-4 py-1 hover:bg-gray-50"
+              className="px-4 py-1 hover:bg-blue-50"
             >
               {item}
             </button>
@@ -63,7 +64,7 @@ const HomePage = () => {
 
       <main className="container mx-auto px-4">
         <motion.h1 
-          className="text-4xl md:text-6xl font-bold text-center my-8"
+          className="text-3xl md:text-5xl font-bold text-center my-8 font-body"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -74,7 +75,7 @@ const HomePage = () => {
           <AnimatePresence mode="wait">
             <motion.h2
               key={`title-${currentPage}`}
-              className="text-7xl md:text-8xl font-bold text-gray-100 text-center mb-8"
+              className="text-10xl md:text-9xl font-bold text-gray-100 text-center mb-2"
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -50, opacity: 0 }}
