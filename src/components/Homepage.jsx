@@ -8,7 +8,7 @@ import novaVrLogo from '../assets/nova-vr-logo.png'
 const NavButton = ({ direction, onClick }) => (
   <button 
     onClick={onClick}
-    className="p-2 border border-pink-300 bg-white hover:bg-gray-50"
+    className="p-2 rounded-full shadow-lg bg-white hover:bg-blue-50 transition-colors"
     aria-label={`Navigate ${direction}`}
   >
     {direction === 'prev' ? <ChevronLeft size={24} /> : <ChevronRight size={24} />}
@@ -75,7 +75,7 @@ const HomePage = () => {
           <AnimatePresence mode="wait">
             <motion.h2
               key={`title-${currentPage}`}
-              className="text-10xl md:text-9xl font-bold text-gray-100 text-center mb-2"
+              className="text-[4rem] md:text-9xl font-bold text-gray-100 text-center mb-2"
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -50, opacity: 0 }}
@@ -110,7 +110,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <button className="mx-auto mt-8 block px-6 py-2 border hover:bg-gray-50">
+        <button className="mx-auto mt-8 block px-6 py-2 border hover:bg-blue-50">
           Explore Our World
         </button>
       </main>
