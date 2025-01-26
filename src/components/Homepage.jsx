@@ -33,7 +33,7 @@ const HomePage = () => {
       <nav className="flex justify-between items-center p-4">
         <img src={novaVrLogo} alt='Nova VR Logo' className='w-20'></img>
         
-        <button className="md:hidden border p-1" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <button className="md:hidden p-1" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <Menu size={24} />
         </button>
         
